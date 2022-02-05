@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- https://www.section.io/engineering-education/how-to-plot-multiple-marker-on-leaflet-map-using-jquery/ -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midland Housing Heatmap</title>
+
+    <!-- leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+
+    <!-- leaflet javascript, place after leaflet css -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+
+    <!-- This must go BEFORE the Leaflet-Heatmap plug-in -->
+    <!-- Heatmap.js -->
+    <script type="text/javascript" src="../static/js/heatmap.js"></script>
+
+
+    <!-- leaflet-heatmap.js -->
+    <script type="text/javascript" src="../static/js/leaflet-heatmap.js"></script>
+
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <!-- D3 library -->
+    <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- set var's for handling userInput -->
+    <!-- <script 
+    type="text/javascript"> var userText = document.getElementById("userInput").value; var url= `/${userText}`;
+    </script> -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <!-- our css -->
+    <link rel="stylesheet" href="../static/css/styles.css"/>
+</head>
+
+<body>
+    <div id="form_div">
+    <br>
+    <form id="myForm">
+    <label >Address:</label>
+    <input type="text" id="userInput">
+    <input type="submit" id="submit" onclick="d3_marker_map();" value="Submit">
+    <br><br>
+    </form>
+
+    </div>
+
+    <div id="map"></div>
+    <script src="../static/js/basic_map.js"></script>
+
+
+  </body>
+
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</html>
