@@ -37,9 +37,9 @@ def index():
 def load_database(userInput):
     userInput = str(userInput)
     
-    # documents = mongo.db.test_properties.find()
+    documents = mongo.db.test_properties.find()
     # test_call for just one entry
-    documents = mongo.db.properties.find({"address_2":userInput})
+    # documents = mongo.db.properties.find()
     # print(mongo.db.properties)
     print(' ----------------- DOCUMENTS -----------------')
     print(documents)
