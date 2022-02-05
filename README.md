@@ -1,3 +1,6 @@
+LINK TO INITIAL GITHUB REPO: https://github.com/HendersonAlec2212/Housing_Value_Heatmap
+
+
 # project_03 - Housing Value Heatmap
 Alec | Andrew | Dan | Karina | Reinhard
 
